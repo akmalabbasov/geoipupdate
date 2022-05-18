@@ -14,8 +14,8 @@ term_handler() {
 trap 'kill ${!}; term_handler' SIGTERM
 
 pid=0
-conf_file=/etc/GeoIP.conf
-database_dir=/usr/share/GeoIP
+conf_file=/home/geoipupdate/GeoIP.conf
+database_dir=/home/geoipupdate/data
 flags=
 frequency=$((GEOIPUPDATE_FREQUENCY * 60 * 60))
 
